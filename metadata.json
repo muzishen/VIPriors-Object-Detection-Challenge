@@ -1,0 +1,126 @@
+{
+  "version" : "4.2",
+  "basicinfo" : {
+    "creation_time" : "20200715122112",
+    "model_file_type" : [ {
+      "env_name" : "PyTorch",
+      "file_type" : "others",
+      "name" : "model"
+    } ],
+    "startup_script_path" : "",
+    "name" : "mmdet_eccvcoco",
+    "description" : "",
+    "id" : "mmdet_eccvcoco",
+    "type" : "model",
+    "category" : "",
+    "version" : "1.0.0",
+    "group" : "",
+    "tags" : ""
+  },
+  "runtime" : [ {
+    "env" : {
+      "env_name" : "PyTorch",
+      "env_type" : "system_defined",
+      "env_dependencies" : {
+        "hardware_dependencies" : [ {
+          "min_value" : "1GB",
+          "name" : "MEM",
+          "max_value" : "64GB"
+        }, {
+          "min_value" : "1",
+          "name" : "CPU",
+          "max_value" : "8"
+        }, {
+          "min_value" : "1",
+          "name" : "GPU",
+          "max_value" : "1"
+        } ],
+        "enable_gpu" : true
+      },
+      "env_version" : "PyTorch-1.3.0-python3.7"
+    },
+    "runtime_type" : "retrain",
+    "software_dependencies" : [ {
+      "installer" : "pip",
+      "python_requirements" : "requirements.txt"
+    } ]
+  }, {
+    "env" : {
+      "env_name" : "PyTorch",
+      "env_type" : "system_defined",
+      "env_dependencies" : {
+        "hardware_dependencies" : [ {
+          "min_value" : "1GB",
+          "name" : "MEM",
+          "max_value" : "64GB"
+        }, {
+          "min_value" : "1",
+          "name" : "CPU",
+          "max_value" : "8"
+        }, {
+          "min_value" : "1",
+          "name" : "GPU",
+          "max_value" : "1"
+        } ],
+        "enable_gpu" : true
+      },
+      "env_version" : "PyTorch-1.3.0-python3.7"
+    },
+    "runtime_type" : "predict",
+    "software_dependencies" : [ {
+      "installer" : "pip",
+      "python_requirements" : "requirements.txt"
+    } ]
+  } ],
+  "methods" : [ {
+    "entry" : "cityscape_main.py",
+    "input_params" : [ {
+      "name" : "",
+      "default_dataset" : "",
+      "default_dataset_entity" : "",
+      "default_label" : ""
+    }, {
+      "name" : "",
+      "default_value" : ""
+    }, {
+      "name" : "",
+      "default_value" : ""
+    }, {
+      "name" : "",
+      "default_value" : ""
+    } ],
+    "name" : "cityscape_main",
+    "type" : "retrain",
+    "http_method" : "post",
+    "http_path" : "/retrain",
+    "input_datameta" : {
+      "min_size" : "0",
+      "datasets" : ""
+    },
+    "model_file_directory" : "model",
+    "invoke_type" : "async"
+  }, {
+    "entry" : "mmdet2_predict.py:predict_data",
+    "http_method" : "post",
+    "name" : "mmdet2_predict",
+    "model_file_directory" : "model",
+    "output_params" : [ ],
+    "input_datameta" : { },
+    "description" : "",
+    "http_path" : "",
+    "input_params_demo" : "",
+    "type" : "predict",
+    "invoke_type" : "sync"
+  } ],
+  "datasets" : [ {
+    "features" : [ ],
+    "name" : "custom_city",
+    "description" : ""
+  }, {
+    "features" : [ ],
+    "name" : "c_r2_101",
+    "description" : ""
+  } ],
+  "metrics" : [ ],
+  "config_meta" : [ ]
+}
