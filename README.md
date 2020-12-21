@@ -1,16 +1,17 @@
 # A Report to VIPriors Object Detection Challenge
  This is 1st Code for the VIPriors Object Detection of 2020 ECCV Workshop
- 
- ![image](https://github.com/muzishen/A-Report-to-VIPriors-Object-Detection-Challenge/blob/master/demo3.png)
-## Offline Data Augmentation
-### (1)  Copy a single picture 6 times and random auto augmentation (e.g., brightness, shuffle channel, contrast, noise) 
-### (2) Use bounding-box augmentation to random crop classes with few samples 
-### (3) Apply albumentations library  to above all data (e.g., hue saturation value, median blur) 
-## Online Data Augmentation
-![image](https://github.com/muzishen/A-Report-to-VIPriors-Object-Detection-Challenge/blob/master/demo.png)
+ VIPriors workshop 的完整代码
+比赛规则：禁止使用预训练模型！！！
+## 离线增强
+### (1) 复制所有图片6次，并进行随机自动增强(策略包括，亮度，洗牌通道，对比度，噪声)
+### (2) 对类别较少的样本使用bbox增强 
+### (3) 对以上所有数据应用albumentations增强库(策略只包括 色彩饱和度和中值模糊)
+
+## 在线增强
 ### bbox-jitter, grid-mask, and mix-up.
-## Embed global context feature
-## Use switchable atrous convolution to the backbone
-## Replace all batch normalization with group normalization
-## Apply gradient centralization 
-![image](https://github.com/muzishen/A-Report-to-VIPriors-Object-Detection-Challenge/blob/master/demo2.png)
+
+## 增强 global context feature
+## 使用switchable atrous convolution to the backbone
+## 根据kaiming大神的论文，把骨干网的BN换成GN，效果神奇
+## 使用SGD_GC优化器
+
