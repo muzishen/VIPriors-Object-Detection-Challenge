@@ -18,5 +18,6 @@
 #### 根据kaiming大神的论文，把骨干网的BN换成GN，效果神奇 
 #### 使用SGD_GC优化器，本部分参考开源仓库[Gradient-Centralization](https://github.com/Yonghongwei/Gradient-Centralization)
 
-#### 使用了Cascade-RCNN级联检测器，骨干网 ResNeSt-152, Res2net-101, SeNet-154,最后结果检测框merge 
-### ![实验结果](/img/20201221125932.png)
+## 使用了Cascade-RCNN级联检测器，骨干网 ResNeSt-152, Res2net-101, SeNet-154,最后结果检测框merge 
+
+#### ![实验结果](/img/20201221125932.png)
