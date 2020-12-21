@@ -16,6 +16,6 @@
 
 ### 增强 global context feature
 ### 使用switchable atrous convolution to the backbone
-### 根据kaiming大神的论文，把骨干网的BN换成GN，效果神奇
-### 使用SGD_GC优化器
+### 根据kaiming大神的论文，把骨干网的BN换成GN，效果神奇 
+### 使用SGD_GC优化器，本部分参考开源仓库[Gradient-Centralization](https://github.com/Yonghongwei/Gradient-Centralization)
 
