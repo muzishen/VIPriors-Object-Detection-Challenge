@@ -1,6 +1,7 @@
 # A Report to VIPriors Object Detection Challenge
  This is 1st Code for the VIPriors Object Detection of 2020 ECCV Workshop
  VIPriors workshop 的完整代码
+##
 比赛规则：禁止使用预训练模型！！！
 ## 离线增强
 ### (1) 复制所有图片6次，并进行随机自动增强(策略包括，亮度，洗牌通道，对比度，噪声)
@@ -10,8 +11,8 @@
 ## 在线增强
 ### bbox-jitter, grid-mask, and mix-up.
 
-## 增强 global context feature
-## 使用switchable atrous convolution to the backbone
-## 根据kaiming大神的论文，把骨干网的BN换成GN，效果神奇
-## 使用SGD_GC优化器
+### 增强 global context feature
+### 使用switchable atrous convolution to the backbone
+### 根据kaiming大神的论文，把骨干网的BN换成GN，效果神奇
+### 使用SGD_GC优化器
 
