@@ -12,7 +12,7 @@
 #### bbox-jitter，本部分代码参考开源仓库[bbox-jitter](https://github.com/cizhenshi)
 #### grid-mask
 #### mix-up
-
+## 训练技巧
 #### 增加 global context feature
 #### 在骨干网中加入switchable atrous convolution 
 #### 根据kaiming大神的论文，把骨干网的BN换成GN，效果神奇 
