@@ -1,4 +1,4 @@
-### A Report to VIPriors Object Detection Challenge
+### [A Report to VIPriors Object Detection Challenge](https://arxiv.org/pdf/2104.09059.pdf)
  This is 1st Code for the VIPriors Object Detection of 2020 ECCV Workshop
  VIPriors workshop 的完整代码
 #### 比赛规则：禁止使用预训练模型！！！
